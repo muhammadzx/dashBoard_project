@@ -1,0 +1,17 @@
+<?php
+
+namespace App\Models;
+
+use App\Models\Courses;
+use App\Models\User;
+use Illuminate\Database\Eloquent\Model;
+
+class Lecturer extends Model
+{
+    public function user(){
+        return $this->belongsTo(User::class);
+    }
+    public function courses(){
+        return $this->hasMany(Courses::class);
+    }
+}

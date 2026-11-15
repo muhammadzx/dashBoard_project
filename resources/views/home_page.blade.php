@@ -1,2 +1,5 @@
 @include('layout_pages.header')
-@include('layout_pages.side_bar')
+@extends('layout_pages.side_bar')
+@section('cont')
+
+@endsection
